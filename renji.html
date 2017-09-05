@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <meta name="viewport" content="width=device-width">
+</head>
+<body>
+<!--五子棋-->
+<div class="main">
+   
+    <div class="anniu">
+        <button id="btn1" onclick="People();">人人大战</button>
+        <button id="btn2" onclick="AI();">人机大战</button>
+    </div>
+    <div id="box">
+    </div>
+</div>
+  <script src="js/jquery-1.12.4.min.js"></script> 
+ <script type="text/javascript" src="js/script.js"></script>
+ <script type="text/javascript" src="js/index.js"></script> 
+ <script>
+ $("btn2").onclick = function(){
+    var a = confirm("是否开始人机大战？");
+    if (a) {
+        me = true;
+        newGame();
+        drawChessBoard();
+    }
+}
+$("btn1").onclick = function(){
+    var a = confirm("是否开始人人对战？");
+    if (a) {
+        me = true;
+        newGame_people();
+        drawChessBoard();
+    }
+}
+
+ </script>
+</body>
+</html>

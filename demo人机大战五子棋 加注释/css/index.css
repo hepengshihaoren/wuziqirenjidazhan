@@ -1,0 +1,6 @@
+/*棋盘*/
+canvas{              /*画棋盘*/
+    display: block;
+    margin: 50px auto;
+    box-shadow: -2px -2px 2px #EFEFEF,5PX 5PX 5PX #B9B9B9;
+}
